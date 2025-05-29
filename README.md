@@ -1,4 +1,66 @@
-
+finance-game-pro/
+├── 📱 mobile-app/                 # Мобильное приложение
+│   ├── src/
+│   ├── package.json
+│   └── app.json
+├── 🌐 web-platform/               # Веб-платформа
+│   ├── app/                       # Next.js App Router
+│   │   ├── api/                   # API маршруты
+│   │   │   ├── auth/
+│   │   │   ├── users/
+│   │   │   ├── quizzes/
+│   │   │   └── analytics/
+│   │   ├── dashboard/             # Страницы дашборда
+│   │   ├── profile/               # Страницы профиля
+│   │   ├── globals.css            # Глобальные стили
+│   │   ├── layout.tsx             # Корневой layout
+│   │   └── page.tsx               # Главная страница
+│   ├── components/                # React компоненты
+│   │   ├── ui/                    # shadcn/ui компоненты
+│   │   ├── auth/                  # Компоненты авторизации
+│   │   ├── quiz/                  # Компоненты квизов
+│   │   ├── dashboard/             # Компоненты дашборда
+│   │   └── profile/               # Компоненты профиля
+│   ├── lib/                       # Утилиты и конфигурация
+│   │   ├── auth.ts                # Настройки авторизации
+│   │   ├── db.ts                  # Подключение к БД
+│   │   ├── utils.ts               # Общие утилиты
+│   │   └── validations.ts         # Схемы валидации
+│   ├── hooks/                     # Пользовательские хуки
+│   │   ├── use-auth.ts            # Хук авторизации
+│   │   ├── use-quiz.ts            # Хук квизов
+│   │   └── use-analytics.ts       # Хук аналитики
+│   ├── types/                     # TypeScript типы
+│   │   ├── auth.ts
+│   │   ├── quiz.ts
+│   │   └── user.ts
+│   ├── public/                    # Статические файлы
+│   │   ├── images/
+│   │   └── icons/
+│   ├── package.json
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── 🗄 database/                   # База данных
+│   ├── migrations/                # Миграции
+│   ├── seeds/                     # Начальные данные
+│   └── schema.sql                 # Схема БД
+├── 📚 docs/                       # Документация
+│   ├── api.md                     # API документация
+│   ├── deployment.md              # Инструкции по развертыванию
+│   └── architecture.md            # Архитектурная документация
+├── 🧪 tests/                      # Тесты
+│   ├── unit/                      # Юнит тесты
+│   ├── integration/               # Интеграционные тесты
+│   └── e2e/                       # End-to-end тесты
+├── 🔧 scripts/                    # Скрипты автоматизации
+│   ├── deploy.sh                  # Скрипт развертывания
+│   ├── backup.sh                  # Скрипт резервного копирования
+│   └── seed.ts                    # Заполнение БД тестовыми данными
+├── .env.example                   # Пример переменных окружения
+├── .gitignore
+├── README.md
+└── package.json
  🎮 FinanceGame Pro - Полный обзор реализованного проекта
 
  📋 Общее описание проекта
